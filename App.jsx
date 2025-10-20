@@ -1,20 +1,12 @@
-import React from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
-import Login from './pages/Login'
-import Dashboard from './pages/Dashboard'
-import Partner from './pages/Partner'
+import React from "react";
 
-function RequireAuth({ children }) {
-  const token = localStorage.getItem('ppd_token')
-  return token ? children : <Navigate to="/" replace />
-}
-
-export default function App(){
+function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} />
-      <Route path="/partner/:id" element={<RequireAuth><Partner /></RequireAuth>} />
-    </Routes>
-  )
+    <div style={{ textAlign: "center", marginTop: "50px", fontFamily: "Arial" }}>
+      <h1>Painel Parceiros DSE</h1>
+      <p>🚀 Sistema online e funcionando com sucesso!</p>
+    </div>
+  );
 }
+
+export default App;
