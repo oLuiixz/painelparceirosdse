@@ -20,9 +20,7 @@ export default function Partner(){
           <p><strong>Status:</strong> {p.status}</p>
           <p><strong>Comissão:</strong> {p.commission}%</p>
           <h3>Histórico</h3>
-          <ul>
-            {p.history.map((h,i)=>(<li key={i}>{h}</li>))}
-          </ul>
+          <ul>{p.history.map((h,i)=>(<li key={i}>{h}</li>))}</ul>
         </div>
       </main>
     </div>

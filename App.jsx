@@ -13,9 +13,7 @@ export default function App(){
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route path="/dashboard" element={
-        <RequireAuth><Dashboard /></RequireAuth>
-      } />
+      <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} />
       <Route path="/partner/:id" element={<RequireAuth><Partner /></RequireAuth>} />
     </Routes>
   )

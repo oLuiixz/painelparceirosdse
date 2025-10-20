@@ -8,7 +8,6 @@ export default function Login(){
 
   function handleSubmit(e){
     e.preventDefault()
-    // Simple mock auth: any email/password accepted
     localStorage.setItem('ppd_token', 'demo-token')
     localStorage.setItem('ppd_user', JSON.stringify({email}))
     nav('/dashboard')
@@ -25,7 +24,7 @@ export default function Login(){
           <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} required />
           <button className="primary" type="submit">Entrar</button>
         </form>
-        <p className="muted">Credenciais de demo: qualquer email / qualquer senha</p>
+        <p className="muted">Credenciais demo: qualquer email / senha</p>
       </div>
     </div>
   )

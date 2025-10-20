@@ -21,7 +21,6 @@ export default function Dashboard(){
           <button onClick={logout} className="ghost">Sair</button>
         </div>
       </header>
-
       <main className="container">
         <section className="grid">
           {partners.map(p=>(
